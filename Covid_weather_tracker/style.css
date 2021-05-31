@@ -1,0 +1,79 @@
+
+
+*{
+
+   box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+
+
+.main-container{
+
+ height:100vh;
+ width:100vw;   
+ background-color:black;
+ display: flex;
+ 
+}
+
+/* ------------------------- globe container -------------------------- */
+.map-container{
+
+    height:100%;
+    width: 60%;
+    color:white;
+    font-size: larger;
+    text-align: center;
+}
+
+
+/* ------------------------- information container----------------------- */
+
+.info-container{
+
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+            /* ---------------- menu container ----------------- */
+
+
+.menu-container{
+
+    height: 10%;
+    width: 100%;
+    background-color: rgb(59, 53, 53);
+
+}
+
+        /* ------------------- image-container --------------- */
+
+
+.image-container{
+
+    height: 30%;
+    width: 100%;
+    background-color: cadetblue;
+}
+
+
+
+        /* --------------------- information display container ----------- */
+
+
+.display-info-container{
+
+    height: 60%;
+    width: 100%;
+    background-color: rgb(85, 85, 85);
+
+
+}
