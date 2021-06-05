@@ -363,3 +363,5 @@ function changeToCountry(data) {
   }
 
 }
+
+// function to convert data into comma
