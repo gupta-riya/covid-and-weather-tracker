@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Covid-Weather-Live-Tracker</title>
+    <title>Covid-Live-Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -12,9 +13,21 @@
 
 
       <div class="map-container">
-         
+        <div class="label-box">
+         <div class="white-label label-cont">
+           <div class="color-box" style = "background-color: white;"></div>
+           <div class="label-text"> &lt;= 10</div>
+         </div>
+         <div class="yellow-label label-cont">
+          <div class="color-box" style = "background-color: yellow;"></div>
+          <div class="label-text"> &lt;= 500</div>
+         </div>
+         <div class="red-label label-cont">
+          <div class="color-box" style = "background-color: red;"></div>
+          <div class="label-text"> &gt; 500</div>
+         </div>
        </div>
-
+      </div>
       <!-- -------------------------------info main container ---------------------- -->
       <div class="info-container">
 
@@ -26,11 +39,15 @@
               <div class="globe-icon-container">
                   <img src="img/icons/location.png" class = "icon" alt="Globe-icon">
               </div>
-              <div class="covid-icon icon-container">
-                  <img src="img/icons/virus.png" class = "icon" alt="virus-icon">
+              <div class="covid-icon icon-container active">
+                
+                  <img src="img/icons/virus.png" class = "icon " alt="virus-icon">
+                 
               </div>
               <div class="weather-icon icon-container">
+                
                   <img src="img/icons/cloudy.png" class = "icon" alt="weather-icon">
+                
               </div>
 
 
@@ -47,7 +64,7 @@
           <!-- ----------------------- display info ------------------- -->
           <div class="display-info-container">
 
-              <div class="info-title">INDIA</div>
+              <div class="info-title"></div>
               <div class="row">
               <div class="card confirmed-card">
                 <span class="case-title">Confirmed Cases</span>
@@ -57,7 +74,7 @@
                <div class="card death-card">
                 <span class="case-title">Death Cases</span>
                 <img class="img" src="img/dead.gif">
-                <div class="info death-info"><span class="death-cases">45,876</span></div>
+                <div class="info death-info"><span class="death-cases"></span></div>
                 </div>
               </div>
               <div class="row">

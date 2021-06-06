@@ -83,6 +83,32 @@ display: flex;
    text-align: justify;
 }
 
+.label-box{
+   position: absolute;
+    width: 10vw;
+    height: 15vh;
+    bottom: 3vh;
+    left: 3vw;
+    border-style: inset;
+    border-width: 4px;
+    border-radius: 5%;
+    border-color: red;
+}
+
+.color-box{
+  width:1.5rem;
+  height:1.3rem;
+  border-radius: 5%;
+}
+
+.label-cont{
+  display: flex;
+  margin-bottom: 2px;
+  padding-left: 1rem;
+}
+.label-text{
+  padding-left: 1rem;
+}
 
 
 /* ------------------------- information container----------------------- */
@@ -111,7 +137,7 @@ display: flex;
 
    height: 15%;
    width: 100%;
-   background-color: rgb(59, 53, 53);
+   background-color: #333333;
    display: flex;
    flex-direction: row;
    /* justify-content: space-evenly; */
@@ -137,12 +163,23 @@ display: flex;
    margin-left: 10%;
 }
 
+.active{
+  border-radius: 50%;
+  width: 14%;
+  height:70%;
+  background-color: rgb(40, 49, 58);
+  box-shadow: 0 8px 15px rgba(255, 251, 251, 0.3);
+
+}
+
 .icon{
 
    width:100%;
    height:100%;
   
 }
+
+
 
 
 
@@ -186,19 +223,21 @@ display: flex;
 
 .row{
 
-  height:35%;
+  height:40%;
   width:100%;
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 10px;
+ 
+  padding: 5px;
 }
 
 .card{
 
-  height:100%;
+  height:95%;
   width:40%;
   background-color: rgb(248, 239, 245);
   position: relative;
+  box-shadow: 0 5px 15px rgba(24, 24, 24, 0.3);
 
 }
 
@@ -248,4 +287,212 @@ display: flex;
   text-align: center;
   font-size: larger;
   font-weight: 900;
+}
+
+.weather-display-info-container{
+
+   height: 85%;
+   width: 100%;
+   background: url("https://i.graphicmama.com/blog/wp-content/uploads/2016/12/02102626/cartoon-landscape-vector.png");
+   background-repeat: no-repeat;
+   background-size: 40vw 85vh ;
+}
+
+/* weather css */
+
+.location-input-container
+{
+    height: 10%;
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    
+    
+}
+
+.current-location-container{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  input[type=text]{
+    position: relative;
+    padding: 15px 40px 15px 20px;
+    width: 20px;
+    color: #525252;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #FFFFFF 0%,#464747 #F9F9F9 100%);
+    transition: width 0.4s ease;
+    outline: none;
+    
+  }
+  input[type=text]:focus{
+    width: 300px;
+  }
+  
+  .fa-search{
+    position: relative;
+    left: -39px;
+    color: #e743ec;
+  }
+  
+  .fa-map-marker-alt{
+
+    margin-left: 2rem;
+    color: #e743ec;
+    font-size: 2rem;
+
+  }
+
+  .tooltiptext {
+    font-size: small;
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(161, 86, 145);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    margin-top: 37px;
+    margin-left: -20px;
+  }
+
+  .fa-map-marker-alt:hover,input[type=text]:hover{
+      cursor: pointer;
+  }
+
+  
+  .fa-map-marker-alt:hover .tooltiptext {
+    
+    visibility: visible;
+  }
+
+
+  /* display info  */
+
+.display-data-container
+{
+    width:100%;
+    height:40%;
+    margin-top: 10px;
+    display: flex;
+}
+
+.current-info-container
+{
+    font-family: "Baloo 2", cursive;
+    height:100%;
+    width:50%;
+    padding-left:2rem;
+    padding-top: 2rem;
+
+}
+
+.current-temp-container{
+
+    height:100%;
+    width:50%;
+    /* background-color: beige; */
+}
+
+.day{
+    
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+}
+
+.date{
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+}
+
+.city-name{
+    margin-bottom: 8px;
+    font-size: 2rem;
+}
+
+
+.temp-container{
+
+    height:120px;
+    width:120px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    margin-top: 60px;
+    margin-left: 20px;
+    z-index:1
+}
+
+.temp-img{
+
+    height:120px;
+    width:120px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    margin-top: -170px;
+    margin-left: 80px;
+}
+
+.fa-cloud-sun-rain{
+
+    position: relative;
+    margin-top: 10px;
+    margin-left: 25px;
+    font-size:5rem;
+    color: rgb(185, 224, 224);
+}
+
+
+.temperature{
+
+    position: absolute;
+    font-family: "Baloo 2", cursive;
+    margin-top: 1.3rem;
+    margin-left: 1.5rem;
+    font-size: 3.5rem;
+    color:rgb(71, 128, 182)
+
+}
+
+/* ---------weather type -------- */
+
+.weather-type-container
+{
+    font-family: "Baloo 2", cursive;
+    height: 20%;
+    width:100%;
+    text-align: center;
+    
+}
+
+.weather-type{
+
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.weather-status{
+    font-size: 2rem;
+   
 }
