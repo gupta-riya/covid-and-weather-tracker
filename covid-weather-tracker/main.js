@@ -585,6 +585,34 @@ weatherIcon.addEventListener("click",function(){
     
     }
     
+      function getTemp(t)
+      {
+          return parseInt(t - 273);
+      }
+
+      function geoFindMe() {
+
+      function success(position) {
+        const latitude  = position.coords.latitude;
+        const longitude = position.coords.longitude;
+        callWeatherApi(null,latitude,longitude);
+
+        
+      }
+
+      function error() {
+        alert('Unable to retrieve your location');
+      }
+
+      if(!navigator.geolocation) {
+        
+      } else {
+        
+        navigator.geolocation.getCurrentPosition(success, error);
+      }
+
+      }
+    
     
     
     // delhi default call
@@ -593,31 +621,3 @@ weatherIcon.addEventListener("click",function(){
   
 }
 })
-
-function getTemp(t)
-    {
-        return parseInt(t - 273);
-    }
-    
-function geoFindMe() {
-
-    function success(position) {
-      const latitude  = position.coords.latitude;
-      const longitude = position.coords.longitude;
-      callWeatherApi(null,latitude,longitude);
-  
-      
-    }
-  
-    function error() {
-      alert('Unable to retrieve your location');
-    }
-  
-    if(!navigator.geolocation) {
-      
-    } else {
-      
-      navigator.geolocation.getCurrentPosition(success, error);
-    }
-  
-  }
