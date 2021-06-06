@@ -42,8 +42,14 @@ This application includes a globe which user can use to get the information of t
  
  <h4>Globe with covid cases</h4>
  </br>
+  <img src="covid-weather-tracker/README_files/img_vid/Screenshot (69).png" width = 700 height = 500><br><br>
+  
+  <h4>Weather Tracker</h4>
+ </br>
+  <img src="covid-weather-tracker/README_files/img_vid/Screenshot (75).png" width = 700 height = 500><br><br>
+  <img src="covid-weather-tracker/README_files/img_vid/Screenshot (76).png" width = 700 height = 500><br><br>
+  
+  <a href = "https://youtu.be/hY9Vm_3Y0yE">Demo</a>
 
- <video width = "700" height = "500" controls autoplay muted >
-  <source src= "README_files/img_vid/shortvideo.mp4" type="video/mp4">
-</video>
+ 
 
